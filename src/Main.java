@@ -2,18 +2,11 @@ public class Main {
     public static void main(String[] args) {
 
         int balance = 100;
-        boolean upCash = true;
-
-        int cash;
-        if (upCash) {
-            cash = 1100;
-        } else {
-            cash = 100;
-        }
+        int cash = 1100;
 
         int bonus = balance + cash;
         if (bonus > 1000) {
-            bonus = 1100 / 100;
+            bonus = cash / 100;
         }
 
         System.out.println("Перваночальный баланс: " + balance);
